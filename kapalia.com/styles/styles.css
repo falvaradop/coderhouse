@@ -58,11 +58,10 @@ ul{
 
 
   .btnRed:hover{
-    background-image: linear-gradient(#e00061, #da008a);
+    background-image: linear-gradient(#1f2b87, #fb00ff);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    color: #22000f !important;
   }
 
 
@@ -241,7 +240,7 @@ header {
 } 
 
   .bannerBtn:hover{
-    background-image: linear-gradient(#000000, #2a2a2a);
+    background-image: linear-gradient(#871f82, #fb00ff);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -755,6 +754,7 @@ footer {
 }
 
 .footerBtn:hover{
+        background-image: linear-gradient(#ccaa00, #569f0c);
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
