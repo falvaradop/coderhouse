@@ -23,6 +23,11 @@ p {
 
 }
 
+.titleCenter {
+    margin: 100px 40px 50px 40px;
+    text-align: center;
+}
+
 
 /* inicio de estadisticas Index*/
 .stats {
@@ -316,3 +321,36 @@ footer {
     line-height: 1.6;
 }
 /* fin de footer Black*/
+
+/* Inicio Banners internos */
+
+.imgBannerInternalTitle{
+    height: 300px;
+    line-height: 300px;
+    padding-left: 100px;
+}
+
+.imgBannerFaq{
+    height: 300px;
+    background-image: url(../img/faq.png);
+    background-size: cover;
+    background-position: center;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+}
+
+/* Fin Banners internos */
+
+/* Faq */
+.faqTitle{
+    font-family: 'Merriweather', serif;
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+.faqP{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
