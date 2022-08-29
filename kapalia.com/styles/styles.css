@@ -2,12 +2,12 @@
     /* outline: 1px solid rgb(0, 255, 81) !important; */
     padding: 0%;
     margin: 0%;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
  }  
 
  h1 {
     font-family: 'Merriweather', serif;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 10px 0px;
 }
 
@@ -20,12 +20,16 @@ p {
     font-weight: 400;
     font-size: 1.2rem;
     margin: 0 80px;
-
 }
 
 .titleCenter {
     margin: 100px 40px 50px 40px;
     text-align: center;
+}
+
+.spacer{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -53,23 +57,21 @@ p {
 
 /* Inicio de caracteristicas Index*/
 .featured {
-    padding: 100px 0;
-    margin-top: 100px;
+    padding: 100px 40px 100px 0;
     font-size: 1rem;
 }
 
 .featuredImg{
-padding: 100px 0;
+padding-top: 90px;
 text-align: center;
 }
 
 .featuredP {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    margin: 0 100px 0 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 20px 0px;
     border-top: #EFEFF7 2px solid;
+
     
 }
 /* fin de caracteristicas Index*/
@@ -91,21 +93,27 @@ text-align: center;
     font-weight: bold;
     border-radius: 4px;
     border: none;
-    color: #fff !important;
+    color: #fff;
     transition: all .5s ease;
 }
 
-
-
 .btnRed:hover{
     background-image: linear-gradient(#FB009F, rgb(240, 0, 124));
+    color: #fff;
 }
 
 
+/* inicio nav bar */
 
 .navMenu .navList{
     font-family: 'Lato', sans-serif;
 }
+
+.navMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+} 
 
 .navMenu ul{
     padding: 0px;
@@ -113,8 +121,7 @@ text-align: center;
 }
 
 .navMenu ul li{
-    padding: 5px 10px;
-    margin: 0px;
+    padding: 10px;
 }
 
 .navMenu ul li a {
@@ -130,30 +137,83 @@ text-align: center;
 
 .navLine {
     border-bottom: solid #FA006C 3px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     width: 100%;
 }
+
+/* fin nav bar */
+
+/* Inicio de campaña principal */
+
+.bannerTitle{
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    max-width: 400px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bannerText{
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    max-width: 400px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.bannerBtn {
+    background-image: linear-gradient(#FA006C, #FB009F);
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 10%;
+    opacity:1;
+    transition: all .5s ease;
+} 
+
+  .bannerBtn:hover{
+    background-image: linear-gradient(#871f82, #fb00ff);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+/* fin de campaña principal */
+
+
 
 /* inico stores*/
 
 .stores {
     align-items: center;
+    margin: 10px auto;
+}
+
+.storesBG{
+    background-color: #EFEFF7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px; 
+    text-align: center;
 }
 
 .storesImg{
-    background-color: #EFEFF7;
-    padding: 24px;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    text-align: center;   
+    margin: 12px; 
 }
 
 .storesTitle{
-    padding-top: 20px;
     font-family: 'Lato', sans-serif;
     color: #000;
     font-size: 1.4rem;
-    text-align: center;
+    margin-bottom: 4px;
 }
 
 .storesPlan{
@@ -161,11 +221,10 @@ text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     border-radius: 20px;
-    text-align: center;
     font-style: italic;
     width: 60%;
     color: #fff ;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 /* fin stores */
 
