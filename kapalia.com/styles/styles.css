@@ -23,7 +23,7 @@ p {
 }
 
 .titleCenter {
-    margin: 100px 40px 50px 40px;
+    margin: 50px 40px 50px 40px;
     text-align: center;
 }
 
@@ -111,19 +111,10 @@ text-align: center;
 
 /* inicio nav bar */
 
-.navMenu .navList{
-    font-family: 'Lato', sans-serif;
-}
-
 .navMenu{
-    display: flex;
-    justify-content: center;
+    justify-content: right;
     padding-top: 6px;
-} 
-
-.navMenu ul{
-    padding: 0px;
-    margin: 0px;
+    font-family: 'Lato', sans-serif;
 }
 
 .navMenu ul li{
@@ -150,6 +141,11 @@ text-align: center;
 /* fin nav bar */
 
 /* Inicio de campaña principal */
+
+.bannerImg{
+    padding: 0%;
+    background-color: #fb00ff;
+}
 
 .bannerTitle{
     font-size: 3rem;
@@ -193,6 +189,54 @@ text-align: center;
 /* fin de campaña principal */
 
 
+/* Inicio Banners internos */
+
+
+.imgBannerPrice{
+    background-image: url(../img/price.png);
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+    height: 300px;
+    background-color: #871f82;
+}
+
+.imgBannerInternalTitle{
+    height: 300px;
+    line-height: 300px;
+    text-align: left;
+    padding-left: 4%;
+}
+
+
+.imgBannerFaq{
+    height: 300px;
+    background-image: url(../img/faq.png);
+    background-size: cover;
+    background-position: center;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+}
+
+/* Fin Banners internos */
+
+/* Faq */
+.faqTitle{
+    font-family: 'Merriweather', serif;
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+.faqP{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
+
+
+
 
 /* inico stores*/
 
@@ -233,6 +277,121 @@ text-align: center;
     margin: 0 auto 20px auto;
 }
 /* fin stores */
+
+/* Inicio Tabla de precios */
+
+
+.priceTitle{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+.priceDescription{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0%;
+}
+
+.priceKey{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0px 10px 15px 10px;
+    text-align: center;
+}
+
+.priceCustom{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: justify;
+    margin: 0%; 
+}
+
+.priceMoney1{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.priceMoney2{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 10px 0px;
+    text-align: center; 
+}
+
+.priceSpan{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.priceLine{
+    border: 0.5px solid;
+    color: #D8D8D8;
+    width:80%; 
+    margin: 0 auto;
+}
+
+.priceTableRed{
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(#FA006C, #FB009F);
+    padding: 10px 10px 20px 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;  
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;  
+    height: auto;
+}
+
+.priceTableRed li{
+    list-style-image: url('../img/checkprice.png');
+}
+
+.priceBtn{
+    background-image: linear-gradient(#000000, #2a2a2a);
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 4px;    
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    margin: 0px auto;
+    transition: all .5s ease;
+}
+
+/* .priceBtn:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  } */
+
+
+.priceBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.priceNote{
+    font-style: italic;
+    font-size: 16px;
+    margin: 40px 40px 50px 0px;    
+}
+
+/* Fin tabla de precios */
+
 
 
 /* inicio de footer */
@@ -386,36 +545,3 @@ footer {
     line-height: 1.6;
 }
 /* fin de footer Black*/
-
-/* Inicio Banners internos */
-
-.imgBannerInternalTitle{
-    height: 300px;
-    line-height: 300px;
-    padding-left: 100px;
-}
-
-.imgBannerFaq{
-    height: 300px;
-    background-image: url(../img/faq.png);
-    background-size: cover;
-    background-position: center;
-    font-size: 3rem;
-    font-family: 'Merriweather', serif;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(65, 65, 65);
-}
-
-/* Fin Banners internos */
-
-/* Faq */
-.faqTitle{
-    font-family: 'Merriweather', serif;
-    font-size: 1rem !important;
-    text-align: left;
-}
-
-.faqP{
-    font-family: 'Lato', sans-serif;
-    font-size: 22px;
-}
