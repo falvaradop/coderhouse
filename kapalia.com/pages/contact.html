@@ -14,25 +14,42 @@
 
 <body id="gridContact">
     
-    <!-- Inicio de header -->
-    <header>
-        <div class="navLogo">
-            <img src="../img/logo.png" alt="Logo Kapalia" />
+   
+     <!-- inicio header -->
+     <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-white">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo Kapalia" />                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navMenu" id="navbarNav" >
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./price.html">Planes y precio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./testimony.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navLine" href="./contact.html">Contacto</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-lg btnRed">CREA TU TIENDA</button>
+                    </li>
+                    </ul>
+                </div>
+                <!-- </div> -->
+            </nav>
         </div>
-        <nav class="navBar">
-            <ul class="navList">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./price.html">Planes y precio</a></li>
-                <li><a href="./testimony.html">Testimonios</a></li>
-                <li><a href="./faq.html">Preguntas</a></li>
-                <li><a class="navLine" href="./contact.html">Contacto</a></li>
-                <li><p style="color:#D9D9D9";>|</p></li>
-                <li><a href="https://kapalia.com/admin">Ingresar</a></li>
-                <li><a href="https://kapalia.com/" class="btnRed">CREA TU TIENDA</a></li>
-            </ul>
-        </nav>
     </header> 
-    <!-- Fin de header -->
+    <!-- fin header -->
 
     <main>
 
@@ -93,66 +110,72 @@
 
 </main>
 
-<!-- inicio footer -->
-<footer>
-    <div class="footer1">
-        <img class="footerLogo" src="../img/logobw.png" alt="Logo Kapalia"/>
-        <div class="footerAbout">Kapalia es un servicio que te permite crear sitios web con carrito de compras en muy poco tiempo y a un bajo costo.</div>
-        <button class="footerBtn">CREA TU TIENDA ONLINE</button>
-    </div>
-    <div class="footer2">
-    <h1 class="footerTitle">SECCIONES</h1>
-        <nav class="footerNav">
-            <ul>
-                <li>
-                <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                <a href="./price.html">Planes y precio</a>
-                </li>
-                <li>
-                <a href="./testimony.html">Testimonios</a>
-                </li>
-                <li>
-                <a href="./faq.html">Preguntas</a>
-                </li>
-                <li>
-                <a href="./contact.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="footer3">
-        <h1 class="footerTitle">NEWSLETTER</h1>
-        <form class="footerForm">
-            <div>
-                <input class="footerInput" type="text" placeholder="Tu email">
+    <!-- inicio footer -->
+    <footer class="container-fuid">
+        <div class="row">
+            <div class="footer1 col-12 col-md-12 col-lg-4">
+                <img class="footerLogo" src="../img/logobw.png" alt="Logo Kapalia"/>
+                <div class="footerAbout">Kapalia es un servicio que te permite crear sitios web con carrito de compras en muy poco tiempo y a un bajo costo.</div>
+                <button class="footerBtn">CREA TU TIENDA ONLINE</button>
             </div>
-            <div>
-                <input class="footerBtn" type="submit" value="Enviar">
+            <div class="footer2 col-12 col-md-6 col-lg-4">
+            <h1 class="footerTitle">SECCIONES</h1>
+                <nav class="footerNav">
+                    <ul>
+                        <li>
+                        <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                        <a href="./price.html">Planes y precio</a>
+                        </li>
+                        <li>
+                        <a href="./testimony.html">Testimonios</a>
+                        </li>
+                        <li>
+                        <a href="./faq.html">Preguntas</a>
+                        </li>
+                        <li>
+                        <a href="./contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </form>
-        <h1 class="footerTitle">SIGUENOS</h1>
-            <div class="footerSocial">
-                <div>
-                    <a href="#" class="fa fa-facebook"></a>
-                </div>
-                <div>
-                    <a href="#" class="fa fa-instagram"></a>   
-                </div>
-                <div>
-                    <a href="#" class="fa fa-whatsapp"></a>   
-                </div>
-                <div>
-                    <a href="#" class="fa fa-twitter"></a>
+            <div class="footer3 col-12 col-md-6 col-lg-4">
+                <h1 class="footerTitle">NEWSLETTER</h1>
+                <form class="footerForm">
+                    <div>
+                        <input class="footerInput" type="text" placeholder="Tu email">
+                    </div>
+                    <div>
+                        <input class="footerBtn" type="submit" value="Enviar">
+                    </div>
+                </form>
+                <br>
+                <h1 class="footerTitle">SIGUENOS</h1>
+                    <div class="footerSocial">
+                        <div>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-instagram"></a>   
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-whatsapp"></a>   
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-</footer>
-<section id="footerBlack">
-    <div class="footerBlackP">Términos de Uso • Políticas de Privacidad • Garantías</div>
-    <div class="footerBlackP"> 2020 - 2022 ©  KAPALIA — Plataforma y marca KAPALIA son propiedad de Wompad S.A.</div>
-</section>
+    </footer>
+    <section id="footerBlack">
+        <div class="footerBlackP">Términos de Uso • Políticas de Privacidad • Garantías</div>
+        <div class="footerBlackP"> 2020 - 2022 ©  KAPALIA — Plataforma y marca KAPALIA son propiedad de Wompad S.A.</div>
+    </section>
  <!-- fin footer -->
-</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+</body> 
 </html>
+    
