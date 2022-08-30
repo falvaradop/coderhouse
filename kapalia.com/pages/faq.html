@@ -1,88 +1,85 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Kapalia creamos tu tienda online</title>
-</head>
-    <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+        <title>Kapalia creamos tu tienda online</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d65cbc0990.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+
+<body>
     <!-- inicio header -->
     <header class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo Kapalia" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <nav class="navbar navbar-expand-lg bg-white">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo Kapalia" />                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navMenu" id="navbarNav" >
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./price.html">Planes y precio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./testimony.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navLine" href="./faq.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contacto</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-lg btnRed">CREA TU TIENDA</button>
+                    </li>
+                    </ul>
                 </div>
-                
-                <div class="navMenu">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/price.html">Planes y precio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/testimony.html">Testimonios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active navLine" href="./pages/faq.html">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contact.html">Contacto</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <div> style="color:#D9D9D9";>|</div>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://kapalia.com/admin">Ingresar</a>
-                            </li>
-                            <li>
-                                <button type="button" class="btn btn-lg btnRed">CREA TU TIENDA</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-              </nav>
+                <!-- </div> -->
+            </nav>
         </div>
     </header> 
     <!-- fin header -->
 
     <main class="container-fluid">
-    <!-- Inicio Banner interno -->
-        <div class="row">
-            <div class="imgBannerFaq">
-                <div class="imgBannerInternalTitle">Preguntas frecuentes</div>
+        <!-- Inicio Banner interno -->
+            <div class="row">
+                <div class="imgBannerFaq">
+                    <div class="imgBannerInternalTitle">Testimonios</div>
+                </div>
             </div>
-        </div>
-    <!-- Fin Banner interno -->
+        <!-- Fin Banner interno -->
 
     <h1 class="titleCenter">¿Tienes dudas? te ayudamos respondiéndolas</h1>
 
     <!-- Inicio de faq -->
 
-    <div class="accordion"  id="accordionExample">
-        <div class="accordion-item">
+    <div class="accordion faq" id="accordionExample">
+        <div class="accordion-item ">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            ¿Qué es una pasarela de pagos?
+            <button class="accordion-button faqBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="faqTitle">
+                ¿Qué es una pasarela de pagos?
+            </div>
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse show faqText" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div>KAPALIA es una plataforma tecnológica que te permite administrar tu tienda en línea. Es como tener un local comercial virtual. Ahí podrás crear productos, subir fotos, cambiar precios, ver los pedidos realizados por los clientes, realizar seguimiento a las ventas realizadas, cambiar tus banners y muchos temas adicionales.</div>
+                <br>
                 <div>Por otro lado, la pasarela de pagos es el medio que permite conectar tu tienda KAPALIA con el sistema bancario nacional. KAPALIA se integra con Paymentez y ellos se encargan de comunicarse automáticamente con los bancos para que tu tienda pueda vender en línea.</div>
+                <br>
                 <div>Una vez que tu tienda virtual sea aceptada para la venta en línea, cualquier tema relacionado a los pagos debe ser atendido directamente entre el cliente y la pasarela de pagos. KAPALIA no tiene visibilidad sobre las transacciones que se realicen en el sitio, esto lo maneja directamente la pasarela de pagos.</div>
+                <br>
                 <div>Tus clientes pueden comprar tus productos utilizando estas tarjetas de crédito:</div>
                 <img src="../img/creditcards.png" alt="tarjetas de credito" width="370px" height="48px" />
             </div>
@@ -90,36 +87,46 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed faqBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="faqTitle">
                 ¿En cuánto tiempo puedo tener mi tienda en línea?
+                </div>
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div id="collapseTwo" class="accordion-collapse collapse faqText" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div>Todo depende del tiempo que te tardes recopilando la información de productos y fotos para publicar en tu tienda KAPALIA.</div>
+                <br>
                 <div>Se estima que la recopilación de la información te puede tomar 4-6 semanas dependiendo de la cantidad de productos que poseas (fotos y descripción). Adicionalmente debes pasar por un proceso de calificación con los bancos y esta tarea puede tomar otras 4-6 semanas adicionales por los requisitos que debes de presentar.</div>
+                <br>
                 <div>En resumen, se estima que una tienda en línea puede estar 100% operativa desde 8 hasta 12 semanas, sin embargo puedes comenzar a vender mediante la opción de transferencia bancaria o pago en efectivo una vez que tengas subido tu catálogo de productos.</div>
-                <div>En KAPALIA estamos listos para crear tu tienda y acompañarte en cada paso, para arrancar envíanos la información de tus productos en nuestra plantilla de carga inicial.</p>
+                <br>
+                <div>En KAPALIA estamos listos para crear tu tienda y acompañarte en cada paso, para arrancar envíanos la información de tus productos en nuestra plantilla de carga inicial.</div>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed faqTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed faqBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="faqTitle">
                 ¿KAPALIA trabaja con WordPress o similares?
+                </div>
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse faqText" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div>Respuesta corta: <strong>¡No!</strong> Respuesta larga: KAPALIA es un sistema propietario que fue creado internamente para brindar la mejor experiencia posible en cada detalle del proceso de venta en línea a nuestras tiendas y clientes.</div>
-                <div>Si comparas nuestra plataforma administrativa con Wordpress, notarás una gran diferencia en términos de usabilidad, facilidad de uso, y una significativa mejora en la velocidad de carga del sitio web. Nuestro partner de servidores es Rackspace Inc. para garantizar que tu sitio siempre esté respaldado y operativo. Adicionalmente utilizamos el servicio de CloudFlare para optimizar la velocidad, seguridad, entre otros.</div>      
+                <br>
+                <div>Si comparas nuestra plataforma administrativa con Wordpress, notarás una gran diferencia en términos de usabilidad, facilidad de uso, y una significativa mejora en la velocidad de carga del sitio web. Nuestro partner de servidores es Rackspace Inc. para garantizar que tu sitio siempre esté respaldado y operativo. Adicionalmente utilizamos el servicio de CloudFlare para optimizar la velocidad, seguridad, entre otros.</div>   
             </div>
           </div>
         </div>
-      </div>    
-    <!-- Fin de Faq -->
+      </div>
+<!-- Fin de Faq -->
 
-    <!-- <div class="faqImg"><img src="../img/sidefaq.png" alt="FAQs Kapalia" width="600px" height="1200px" /></div> -->
+<div class="spacer"></div>
+
+<!-- <div class="faqImg"><img src="../img/sidefaq.png" alt="FAQs Kapalia" width="600px" height="1200px" /></div> -->
     
 
     <!-- inicio call to callAction -->
@@ -134,69 +141,72 @@
         </div>    
     </section>
     <!-- fin call to callAction -->
- <!-- inicio footer -->
- <footer class="container-fuid">
-    <div class="row">
-        <div class="footer1 col-4">
-            <img class="footerLogo" src="../img/logobw.png" alt="Logo Kapalia"/>
-            <div class="footerAbout">Kapalia es un servicio que te permite crear sitios web con carrito de compras en muy poco tiempo y a un bajo costo.</div>
-            <button class="footerBtn">CREA TU TIENDA ONLINE</button>
-        </div>
-        <div class="footer2 col-4">
-        <h1 class="footerTitle">SECCIONES</h1>
-            <nav class="footerNav">
-                <ul>
-                    <li>
-                    <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                    <a href="./price.html">Planes y precio</a>
-                    </li>
-                    <li>
-                    <a href="./testimony.html">Testimonios</a>
-                    </li>
-                    <li>
-                    <a href="./faq.html">Preguntas</a>
-                    </li>
-                    <li>
-                    <a href="./contact.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer3 col-4">
-            <h1 class="footerTitle">NEWSLETTER</h1>
-            <form class="footerForm">
-                <div>
-                    <input class="footerInput" type="text" placeholder="Tu email">
-                </div>
-                <div>
-                    <input class="footerBtn" type="submit" value="Enviar">
-                </div>
-            </form>
-            <h1 class="footerTitle">SIGUENOS</h1>
-                <div class="footerSocial">
+
+</main>
+
+    <!-- inicio footer -->
+    <footer class="container-fuid">
+        <div class="row">
+            <div class="footer1 col-4">
+                <img class="footerLogo" src="../img/logobw.png" alt="Logo Kapalia"/>
+                <div class="footerAbout">Kapalia es un servicio que te permite crear sitios web con carrito de compras en muy poco tiempo y a un bajo costo.</div>
+                <button class="footerBtn">CREA TU TIENDA ONLINE</button>
+            </div>
+            <div class="footer2 col-4">
+            <h1 class="footerTitle">SECCIONES</h1>
+                <nav class="footerNav">
+                    <ul>
+                        <li>
+                        <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                        <a href="./pages/price.html">Planes y precio</a>
+                        </li>
+                        <li>
+                        <a href="./pages/testimony.html">Testimonios</a>
+                        </li>
+                        <li>
+                        <a href="./pages/faq.html">Preguntas</a>
+                        </li>
+                        <li>
+                        <a href="./pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer3 col-4">
+                <h1 class="footerTitle">NEWSLETTER</h1>
+                <form class="footerForm">
                     <div>
-                        <a href="#" class="fa fa-facebook"></a>
+                        <input class="footerInput" type="text" placeholder="Tu email">
                     </div>
                     <div>
-                        <a href="#" class="fa fa-instagram"></a>   
+                        <input class="footerBtn" type="submit" value="Enviar">
                     </div>
-                    <div>
-                        <a href="#" class="fa fa-whatsapp"></a>   
-                    </div>
-                    <div>
-                        <a href="#" class="fa fa-twitter"></a>
+                </form>
+                <h1 class="footerTitle">SIGUENOS</h1>
+                    <div class="footerSocial">
+                        <div>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-instagram"></a>   
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-whatsapp"></a>   
+                        </div>
+                        <div>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-</footer>
-<section id="footerBlack">
-    <div class="footerBlackP">Términos de Uso • Políticas de Privacidad • Garantías</div>
-    <div class="footerBlackP"> 2020 - 2022 ©  KAPALIA — Plataforma y marca KAPALIA son propiedad de Wompad S.A.</div>
-</section>
-<!-- fin footer -->
+    </footer>
+    <section id="footerBlack">
+        <div class="footerBlackP">Términos de Uso • Políticas de Privacidad • Garantías</div>
+        <div class="footerBlackP"> 2020 - 2022 ©  KAPALIA — Plataforma y marca KAPALIA son propiedad de Wompad S.A.</div>
+    </section>
+ <!-- fin footer -->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
 </body> 
