@@ -1,22 +1,22 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Kapalia creamos tu tienda online</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+        <title>Kapalia creamos tu tienda online</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d65cbc0990.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
 
-<body id="gridContact">
-    
-   
-     <!-- inicio header -->
-     <header class="container-fluid">
+<body>
+
+    <!-- inicio header -->
+    <header class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-white">
             <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo Kapalia" />                    
@@ -51,22 +51,63 @@
     </header> 
     <!-- fin header -->
 
-    <main>
-
-    <!-- Inicio Banner interno -->
-    <section id="bannerIntermal">
-        <div class="imgBannerContact">
-            <div class="imgBannerInternalTitle">Contacto</div>
-        </div>
-    </section>
-    <!-- Fin Banner interno -->
+    <main class="container-fluid">
+        <!-- Inicio Banner interno -->
+            <div class="row">
+                <div class="imgBannerContact">
+                    <div class="imgBannerInternalTitle">Contacto</div>
+                </div>
+            </div>
+        <!-- Fin Banner interno -->
 
     <h1 class="titleCenter">Te invitamos a dar el primer paso para tener tu tienda online</h1>
 
-
     <!--Formulario de contacto-->
+    
+    <section class="container-fluid">
+        <div class="row">
+            <form class=" col-12 col-md-6 p-4">
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 
-    <section id="contact">   
+            <div class="stats col-12 col-md-6 p-4">
+                <div class="statsTitle">Google maps</div>
+                <img src="../img/mapa.png" class="img-fluid storesImg" alt="Logo store" />
+                <p>aqui va la direccion</p>
+                <div class="contactSocial">
+                    <div>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </div>
+                    <div>
+                        <a href="#" class="fa fa-instagram"></a>   
+                    </div>
+                    <div>
+                        <a href="#" class="fa fa-whatsapp"></a>   
+                    </div>
+                    <div>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+    <!-- <section id="contact">   
         <form>
             <h3>Nombre</h3>    
             <input id="formNombre" type="text" placeholder="Nombre y apellido (requerido)">
@@ -97,16 +138,22 @@
 
     <section id="map">
         <div class="googleMap"><img src="../img/mapa.png" alt="mapa" width="1500px"/></div>
-    </section>
+    </section> -->
 
-    <!-- Inicio bloque custom dev -->
-    <section id="callAction">
-        <h1>¡Visita nuestras redes sociales!</h1>
-        <p>Mantente informado de las cosas espectaculares que hacemos cada dia.</p>
-        <br>
-        <img src="../img/redes.png" alt="Contacto Kapalia" width="259px" height="64px">
+
+     <!-- inicio call to callAction -->
+     <section class="container-fluid">
+        <div class="row">
+            <div class="callAction col-12">
+                <h1>¿Estás listo para tener tu tienda online?</h1>
+                <p>Escribenos al Whatasppy uno de nuestros expertos se pondra en contacto contigo.</p>
+                <br>
+                <button class="btnRed">ESCRÍBENOS AL WHATSAPP</button> 
+            </div>
+        </div>    
     </section>
-    <!-- Fin bloque dustom dev -->
+    <!-- fin call to callAction -->
+
 
 </main>
 

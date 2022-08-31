@@ -27,6 +27,11 @@ p {
     text-align: center;
 }
 
+.titleLeft {
+    margin: 50px 20px 50px 20px;
+    text-align: left;
+}
+
 .spacer{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -241,8 +246,6 @@ p {
     text-shadow: 1px 1px 2px rgb(65, 65, 65);
     height: 300px;
 }
-
-
 
 .imgBannerInternalTitle{
     height: 300px;
@@ -570,13 +573,21 @@ footer {
         background-image: linear-gradient(#2a2a2a, #000000);
       }
 
-
 .footerSocial{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
     max-width: 300px ;
-  
+}
+
+.contactSocial{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: 300px;
+    margin-top: 20px;
 }
 
 .footerForm{
