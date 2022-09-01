@@ -1,0 +1,165 @@
+
+/* inicio de footer */
+footer {
+    background-image: $colorsGradientRed;
+    padding: 20px;
+    font-family: $fontSecundary;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer1{
+    color: #fff;
+    padding: 20px;
+}
+
+.footer2{
+    color: #fff;
+    padding: 20px;
+    ul{
+        list-style-type: square;
+        li{
+            padding: 5px 10px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    } 
+}
+
+.footer3{
+    color: #fff;
+    padding: 20px;  
+}
+
+.footerLogo{
+    width: 220px;
+    height: 60px;
+}
+
+.footerAbout{
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.footerBtn{
+    background-image: $colorGradientBlack;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    &:hover{
+        background-image: linear-gradient(#2a2a2a, #000000);
+    }
+}
+
+.footerSocial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: 300px ;
+}
+
+.contactSocial{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.footerForm{
+    display: flex;
+    font-family: $fontSecundary;
+    font-size: 1.5rem;
+    text-align: left;
+    border: none;
+    color: #000;
+}
+
+.footerInput{
+    border: none;
+    color: #000;
+    width: 200px;
+    height: 43px;
+    font-family: $fontSecundary;
+    font-size: 1.0rem;
+    padding-left: 10px;
+}
+
+
+/* Inicio Footer font awesome */
+
+.fa {
+    padding: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+        &:hover{
+        opacity: 0.7;
+        color: #FA006C;
+    }
+}
+  
+.fa-instagram {
+background: #000000;
+color: white;
+}
+
+.fa-whatsapp {
+background: #000000;
+color: white;
+}
+
+.fa-twitter {
+background: #000000;
+color: white;
+}
+
+.fa-facebook {
+background: #000000;
+color: white;
+}
+
+  /* fin Footer font awesome */
+
+/* fin de footer */
+
+/* inicio de footer Black*/
+#footerBlack {
+    background-color: #000;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+.footerBlackP{
+    font-family: $fontSecundary;
+    padding: 0px 20px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* fin de footer Black*/
+
+/* Inicio de Media Query */
+
+@media screen and (max-width:768px){
+    .footerBlackP{
+        text-align: center;
+        font-size: 14px;
+    }
+}

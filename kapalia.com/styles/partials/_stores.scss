@@ -1,0 +1,55 @@
+/* inico stores*/
+
+.stores {
+    align-items: center;
+    margin: 10px auto;
+}
+
+.storesBG{
+    background-color: #EFEFF7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.storesImg{
+    text-align: center;   
+    margin: 12px; 
+}
+
+.storesTitle{
+    font-family: $fontSecundary;
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.storesPlan{
+    background-image: linear-gradient(#FA006C, #FB009F);
+    font-family: $fontSecundary;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    font-style: italic;
+    width: 64%;
+    color: #fff ;
+    margin: 0 auto 20px auto;
+}
+/* fin stores */
+
+@media screen and (max-width:768px){
+    .storesTitle{
+        font-size: 14px;
+    }
+
+    .storesPlan{
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .storesImg{  
+        margin: 8px; 
+    }
+
+}

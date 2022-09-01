@@ -1,0 +1,29 @@
+/* inicio nav bar */
+
+.navMenu {
+    justify-content: right;
+    padding-top: 6px;
+    font-family: $fontSecundary;
+    ul {
+        li{
+        padding: 10px;
+            a{
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #000;
+            transition: all 0.5s ease;
+                &:hover{
+                color: #FA006C;
+                }
+            }
+        }
+    }
+}
+
+.navLine {
+    border-bottom: solid #FA006C 3px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+/* fin nav bar */
