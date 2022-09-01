@@ -89,7 +89,7 @@ p {
 /* fin call to action generales*/
 
 .btnRed{
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
     padding: 10px 20px;
     text-align: center;
     font-size: 1rem;
@@ -99,7 +99,7 @@ p {
     color: #fff;
     transition: all 0.5s ease;
         &:hover{
-        background-image: linear-gradient(#FB009F, rgb(240, 0, 124));
+        background-image: $colorsGradientRed;
         color: #fff;
     }
 }
@@ -128,7 +128,7 @@ p {
 }
 
 .bannerBtn {
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
     font-family: $fontSecundary;
     font-size: 1rem;
     font-weight: bold;
@@ -142,7 +142,7 @@ p {
     opacity:1;
     transition: all 0.5s ease;
     &:hover{
-        background-image: linear-gradient(#871f82, #fb00ff);
+        background-image: $colorsGradientRed;
         transform: scale(1.1);
     }
 } 
@@ -286,7 +286,7 @@ p {
 
 .priceTableRed {
     font-family: $fontSecundary;
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
     padding: 10px 10px 20px 10px;
     color: #fff;
     font-size: 14px;
@@ -300,7 +300,7 @@ p {
     }
 
 .priceBtn{
-    background-image: linear-gradient(#000000, #2a2a2a);
+    background-image: $colorGradientBlack;
     border: none;
     color: #fff;
     padding: 10px 10px;
@@ -339,7 +339,7 @@ p {
 }
 
 .testimonyPlan{
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
     font-family: $fontSecundary;
     color: #fff;
     font-size: 1rem;
@@ -396,7 +396,7 @@ border-radius: 20px;
 }
 
 .faqBg{
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
 }
 
 

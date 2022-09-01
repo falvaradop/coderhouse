@@ -365,7 +365,7 @@ p {
   transition: all 0.5s ease;
 }
 .btnRed:hover {
-  background-image: linear-gradient(#FB009F, rgb(240, 0, 124));
+  background-image: linear-gradient(#FA006C, #FB009F);
   color: #fff;
 }
 
@@ -407,7 +407,7 @@ p {
   transition: all 0.5s ease;
 }
 .bannerBtn:hover {
-  background-image: linear-gradient(#871f82, #fb00ff);
+  background-image: linear-gradient(#FA006C, #FB009F);
   transform: scale(1.1);
 }
 
