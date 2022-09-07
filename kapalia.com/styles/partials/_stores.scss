@@ -6,7 +6,7 @@
 }
 
 .storesBG{
-    background-color: #EFEFF7;
+    background-color: $colorSolidGrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 .storesPlan{
-    background-image: linear-gradient(#FA006C, #FB009F);
+    background-image: $colorsGradientRed;
     font-family: $fontSecundary;
     font-size: 0.8rem;
     border-radius: 20px;

@@ -14,7 +14,7 @@
             color: #000;
             transition: all 0.5s ease;
                 &:hover{
-                color: #FA006C;
+                color: $colorSolidRed;
                 }
             }
         }
@@ -22,7 +22,7 @@
 }
 
 .navLine {
-    border-bottom: solid #FA006C 3px;
+    border-bottom: solid $colorSolidRed 3px;
     padding-bottom: 10px;
     width: 100%;
 }
