@@ -1,0 +1,19 @@
+.btnRed{
+    @extend %btnBase;
+    background-image: $colorGradientRed;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientBlack;
+        color: $colorSolidWhite;
+    }
+}
+
+.btnBlack{
+    @extend %btnBase;
+    background-image: $colorGradientBlack;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientRed;
+        color: $colorSolidWhite;
+    }
+}

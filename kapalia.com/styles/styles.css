@@ -1,4 +1,33 @@
 @charset "UTF-8";
+.btnBlack, .btnRed {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btnRed {
+  background-image: linear-gradient(#FA006C, #FB009F);
+  color: #ffffff;
+}
+.btnRed:hover {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+}
+
+.btnBlack {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+}
+.btnBlack:hover {
+  background-image: linear-gradient(#FA006C, #FB009F);
+  color: #ffffff;
+}
+
 /* inicio nav bar */
 .navMenu {
   justify-content: right;
@@ -350,22 +379,6 @@ p {
 }
 
 /* fin call to action generales*/
-.btnRed {
-  background-image: linear-gradient(#FA006C, #FB009F);
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 4px;
-  border: none;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.btnRed:hover {
-  background-image: linear-gradient(#FA006C, #FB009F);
-  color: #ffffff;
-}
-
 /* Inicio de campaña principal */
 .bannerImg {
   padding: 0%;
