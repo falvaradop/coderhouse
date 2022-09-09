@@ -219,6 +219,8 @@ footer {
 }
 /* inico stores*/
 .stores {
+  background-color: #FA006C;
+  padding: 10px;
   align-items: center;
   margin: 10px auto;
 }

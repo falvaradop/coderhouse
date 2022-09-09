@@ -1,8 +1,7 @@
 /* inico stores*/
 
 .stores {
-    align-items: center;
-    margin: 10px auto;
+    @include storeCards($colorSolidRed, 10px);
 }
 
 .storesBG{

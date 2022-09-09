@@ -1,0 +1,6 @@
+@mixin storeCards($bgColor, $cardPaddding) {
+    background-color: $bgColor;
+    padding: $cardPaddding;
+    align-items: center;
+    margin: 10px auto;    
+}
