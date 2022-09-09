@@ -29,7 +29,7 @@ ul{
 } 
 
 p {
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-weight: 400;
     font-size: 1.2rem;
     margin: 0 80px;
@@ -61,7 +61,7 @@ p {
 }
 
 .featuredP {
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-weight: 400;
     padding: 10px 0px 10px 0px;
     border-top: $colorSolidGrey 2px solid;
@@ -81,7 +81,7 @@ p {
     p{
     margin: 0px 50px;
     text-align: center;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 1.2rem;
     }
 }
@@ -122,7 +122,7 @@ p {
 
 .bannerText{
     font-size: 1.5rem;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     max-width: 400px;
     padding-bottom: 20px;
     text-align: center;
@@ -130,7 +130,7 @@ p {
 
 .bannerBtn {
     background-image: $colorGradientRed;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 4px;
@@ -217,7 +217,7 @@ p {
 }
 
 .faqP{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 22px;
 }
 
@@ -234,7 +234,7 @@ p {
 }
 
 .priceDescription{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 1.1rem;
     padding: 10px 0px;
     text-align: map-get($mainAlign , textCenter);
@@ -242,7 +242,7 @@ p {
 }
 
 .priceKey{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-weight: 400;
     font-size: 1rem;
     padding: 0px 10px 15px 10px;
@@ -250,7 +250,7 @@ p {
 }
 
 .priceCustom{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 1rem;
     padding: 10px;
     text-align: map-get($mainAlign , textJustify);
@@ -286,7 +286,7 @@ p {
 }
 
 .priceTableRed {
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     background-image: $colorGradientRed;
     padding: 10px 10px 20px 10px;
     color: $colorSolidWhite;
@@ -308,7 +308,7 @@ p {
     border-radius: 4px;    
     font-size: 1rem;
     font-weight: bold;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     width: 100%;
     margin: 0px auto;
     transition: all 0.5s ease;
@@ -341,7 +341,7 @@ p {
 
 .testimonyPlan{
     background-image: $colorGradientRed;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     color: $colorSolidWhite;
     font-size: 1rem;
     font-style: italic;
@@ -350,14 +350,14 @@ p {
 }
 
 .testimonySince{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
 .testimonyText{
     font-size: 1.5rem;
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-weight: 400;
     border-top: $colorSolidGrey 2px solid;
 }
@@ -390,7 +390,7 @@ border-radius: 20px;
 }
 
 .faqText{
-    font-family: $fontSecundary;
+    font-family: $fontSecondary;
     font-size: 22px;
     margin: 20px 0;
     text-align: map-get($mainAlign , textJustify);
