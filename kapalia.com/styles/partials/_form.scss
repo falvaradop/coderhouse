@@ -1,30 +1,22 @@
 /* Inicio de contact */
 
-form{
+
+.contactForm{
     font-family: $fontSecondary;
-    text-align: left;
-    font-size: 2rem;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: 0.5px solid $colorSolidGrey2;
+    background-color: $colorSolidGrey;
 }
+
 
 select{
     height: 64px;
-    &::placeholder{
-        padding-left: 10px;
-    }
 }
 
-textarea{
-    height: 250px;
-    color: $colorSolidGrey;
-}
 
 input{
     height: 64px;
-}
-
-.contactDataArea{
-    padding-bottom: 2vh;
-    width: 100%;
 }
 
 .contactSpacer{
@@ -36,7 +28,6 @@ input{
     font-size: 1.2rem;
     color: $colorSolidBlack;
     text-align: center;
-
 }
 
 .contactData2{

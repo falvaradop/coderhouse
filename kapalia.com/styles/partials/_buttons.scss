@@ -17,3 +17,20 @@
         color: $colorSolidWhite;
     }
 }
+
+.priceBtn{
+    @extend %btnBase;
+    background-image: $colorGradientBlack;
+    width: 100%;
+    margin: 0px auto;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientWhite;
+        color: $colorSolidBlack;
+    }
+    a {
+        text-decoration: none;
+        color: $colorSolidWhite;
+    }
+}
+
