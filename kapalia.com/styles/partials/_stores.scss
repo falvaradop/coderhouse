@@ -1,7 +1,7 @@
 /* inico stores*/
 
 .stores {
-    @include storeCards($colorSolidRed, 10px);
+    @include storeCards($colorSolidWhite, 10px);
 }
 
 .storesBG{

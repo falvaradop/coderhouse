@@ -1,0 +1,49 @@
+/* Inicio de contact */
+
+form{
+    font-family: $fontSecondary;
+    text-align: left;
+    font-size: 2rem;
+}
+
+select{
+    height: 64px;
+    &::placeholder{
+        padding-left: 10px;
+    }
+}
+
+textarea{
+    height: 250px;
+    color: $colorSolidGrey;
+}
+
+input{
+    height: 64px;
+}
+
+.contactDataArea{
+    padding-bottom: 2vh;
+    width: 100%;
+}
+
+.contactSpacer{
+    height: 4vh;
+}
+
+.contactData1{
+    font-family: $fontPrimary;
+    font-size: 1.2rem;
+    color: $colorSolidBlack;
+    text-align: center;
+
+}
+
+.contactData2{
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    color: $colorSolidBlack;
+    text-align: center;
+}
+
+/* Fin de contact */
