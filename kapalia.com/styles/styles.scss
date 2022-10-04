@@ -9,6 +9,7 @@
 @import "./partials/footer"; 
 @import "./partials/stores";
 @import "./partials/stats";
+@import "./partials/campaign";
 
 
 
@@ -18,6 +19,8 @@
 //     margin: 0%;
 //     box-sizing: border-box;
 //  }  
+
+
 
 h1 {
     font-family: $fontPrimary;
@@ -107,50 +110,7 @@ p {
 //     }
 // }
 
-/* Inicio de campaña principal */
 
-.bannerImg{
-    padding: 0%;
-}
-
-.bannerTitle{
-    font-size: 3rem;
-    font-family: $fontPrimary;
-    max-width: 400px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.bannerText{
-    font-size: 1.5rem;
-    font-family: $fontSecondary;
-    max-width: 400px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.bannerBtn {
-    background-image: $colorGradientRed;
-    font-family: $fontSecondary;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-    border: none;
-    padding: 10px 20px;
-    color: $colorSolidWhite;
-    text-align: map-get($mainAlign , textCenter);
-    max-width: 400px;
-    margin-bottom: 10%;
-    opacity:1;
-    transition: all 0.5s ease;
-    &:hover{
-        background-image: $colorGradientRed;
-        transform: scale(1.1);
-    }
-} 
-
-
-/* fin de campaña principal */
 
 
 /* Inicio Banners internos */

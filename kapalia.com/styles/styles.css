@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.priceBtn, .btnBlack, .btnRed {
+.bannerBtn, .priceBtn, .btnBlack, .btnRed {
   padding: 10px 20px;
   text-align: center;
   font-size: 1rem;
@@ -14,6 +14,7 @@
 .btnRed {
   background-image: linear-gradient(#FA006C, #FB009F);
   color: #ffffff;
+  text-decoration: none;
 }
 .btnRed:hover {
   background-image: linear-gradient(#000000, #2a2a2a);
@@ -23,6 +24,7 @@
 .btnBlack {
   background-image: linear-gradient(#000000, #2a2a2a);
   color: #ffffff;
+  text-decoration: none;
 }
 .btnBlack:hover {
   background-image: linear-gradient(#FA006C, #FB009F);
@@ -370,6 +372,143 @@ footer {
     font-size: 1rem;
   }
 }
+/* Inicio de campaña principal */
+.carousel-item {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  width: 40%;
+  text-align: center;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bannerImg {
+  padding: 0%;
+}
+
+.bannerTitle {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+}
+
+.bannerText {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.bannerBtn {
+  background-image: linear-gradient(#FA006C, #FB009F);
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.bannerBtn:hover {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+}
+.bannerBtn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 490px) {
+  .bannerTitle {
+    display: none;
+  }
+  .bannerText {
+    display: none;
+  }
+  .bannerBtn {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 491px) and (max-width: 567px) {
+  .bannerTitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .bannerText {
+    display: none;
+  }
+  .bannerBtn {
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 3px 0;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .bannerTitle {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 0;
+  }
+  .bannerText {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    padding: 4px 0;
+  }
+  .bannerBtn {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1009px) {
+  .bannerTitle {
+    font-size: 1.9rem;
+    line-height: 2rem;
+  }
+  .bannerText {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 6px 0;
+  }
+  .bannerBtn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 1010px) and (max-width: 1199px) {
+  .bannerTitle {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  .bannerText {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    padding: 10px 0;
+  }
+  .bannerBtn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bannerTitle {
+    font-size: 3.1rem;
+    line-height: 3.2rem;
+  }
+  .bannerText {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 200;
+    padding: 10px 0;
+  }
+  .bannerBtn {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
 h1 {
   font-family: "Merriweather", serif;
   font-size: 2rem;
@@ -435,48 +574,6 @@ p {
 }
 
 /* fin call to action generales*/
-/* Inicio de campaña principal */
-.bannerImg {
-  padding: 0%;
-}
-
-.bannerTitle {
-  font-size: 3rem;
-  font-family: "Merriweather", serif;
-  max-width: 400px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.bannerText {
-  font-size: 1.5rem;
-  font-family: "Lato", sans-serif;
-  max-width: 400px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.bannerBtn {
-  background-image: linear-gradient(#FA006C, #FB009F);
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 4px;
-  border: none;
-  padding: 10px 20px;
-  color: #ffffff;
-  text-align: center;
-  max-width: 400px;
-  margin-bottom: 10%;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-.bannerBtn:hover {
-  background-image: linear-gradient(#FA006C, #FB009F);
-  transform: scale(1.1);
-}
-
-/* fin de campaña principal */
 /* Inicio Banners internos */
 .imgBannerPrice {
   background-image: url(../img/price.png);
