@@ -14,7 +14,6 @@
 .btnRed {
   background-image: linear-gradient(#FA006C, #FB009F);
   color: #ffffff;
-  text-decoration: none;
 }
 .btnRed:hover {
   background-image: linear-gradient(#000000, #2a2a2a);
@@ -24,7 +23,6 @@
 .btnBlack {
   background-image: linear-gradient(#000000, #2a2a2a);
   color: #ffffff;
-  text-decoration: none;
 }
 .btnBlack:hover {
   background-image: linear-gradient(#FA006C, #FB009F);
@@ -39,10 +37,9 @@
 }
 .priceBtn:hover {
   background-image: linear-gradient(#EFEFF7, #fff);
-  color: #000000;
+  color: #000000 !important;
 }
 .priceBtn a {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -409,6 +406,7 @@ footer {
 .bannerBtn:hover {
   background-image: linear-gradient(#000000, #2a2a2a);
   color: #ffffff;
+  text-decoration: none;
 }
 .bannerBtn a {
   text-decoration: none;
@@ -509,6 +507,10 @@ footer {
     padding: 5px;
   }
 }
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-size: 2rem;

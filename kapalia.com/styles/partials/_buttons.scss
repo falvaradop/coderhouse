@@ -2,7 +2,6 @@
     @extend %btnBase;
     background-image: $colorGradientRed;
     color: $colorSolidWhite;
-    text-decoration: none;
     &:hover{
         background-image: $colorGradientBlack;
         color: $colorSolidWhite;
@@ -13,7 +12,6 @@
     @extend %btnBase;
     background-image: $colorGradientBlack;
     color: $colorSolidWhite;
-    text-decoration: none;
     &:hover{
         background-image: $colorGradientRed;
         color: $colorSolidWhite;
@@ -28,10 +26,9 @@
     color: $colorSolidWhite;
     &:hover{
         background-image: $colorGradientWhite;
-        color: $colorSolidBlack;
+        color: $colorSolidBlack !important;
     }
     a {
-        text-decoration: none;
         color: $colorSolidWhite;
     }
 }
