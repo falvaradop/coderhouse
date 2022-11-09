@@ -1,0 +1,36 @@
+.btnRed{
+    @extend %btnBase;
+    background-image: $colorGradientRed;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientBlack;
+        color: $colorSolidWhite;
+    }
+}
+
+.btnBlack{
+    @extend %btnBase;
+    background-image: $colorGradientBlack;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientRed;
+        color: $colorSolidWhite;
+    }
+}
+
+.priceBtn{
+    @extend %btnBase;
+    background-image: $colorGradientBlack;
+    width: 100%;
+    margin: 0px auto;
+    color: $colorSolidWhite;
+    &:hover{
+        background-image: $colorGradientWhite;
+        color: $colorSolidBlack !important;
+    }
+    a {
+        color: $colorSolidWhite;
+    }
+}
+
+

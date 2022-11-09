@@ -1,0 +1,86 @@
+/* inico stores*/
+
+.stores {
+    @include storeCards($colorSolidWhite, 10px);
+}
+
+.storesBG{
+    background-color: $colorSolidGrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px; 
+    text-align: map-get($mainAlign , textCenter);
+}
+
+.storesImg{
+    text-align: map-get($mainAlign , textCenter); 
+    margin: 12px; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    :hover{
+             opacity: 1;
+          }
+    }
+  
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+.storesTitle{
+    font-family: $fontSecondary;
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.storesPlan{
+    background-image: $colorGradientRed;
+    font-family: $fontSecondary;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    font-style: italic;
+    width: 64%;
+    color: #fff ;
+    margin: 0 auto 20px auto;
+}
+/* fin stores */
+
+@media screen and (max-width:768px){
+    .storesTitle{
+        font-size: 14px;
+    }
+
+    .storesPlan{
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .storesImg{  
+        margin: 8px; 
+    }
+
+}

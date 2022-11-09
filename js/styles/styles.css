@@ -1,0 +1,827 @@
+@charset "UTF-8";
+.bannerBtn, .priceBtn, .btnBlack, .btnRed {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.btnRed {
+  background-image: linear-gradient(#490900, #3B0700);
+  color: #ffffff;
+}
+.btnRed:hover {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+}
+
+.btnBlack {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+}
+.btnBlack:hover {
+  background-image: linear-gradient(#490900, #3B0700);
+  color: #ffffff;
+}
+
+.priceBtn {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  width: 100%;
+  margin: 0px auto;
+  color: #ffffff;
+}
+.priceBtn:hover {
+  background-image: linear-gradient(#EFEFF7, #fff);
+  color: #000000 !important;
+}
+.priceBtn a {
+  color: #ffffff;
+}
+
+/* Inicio de contact */
+.contactForm {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  border-radius: 0px;
+  border: 0.5px solid #a7a7a7;
+  background-color: #EFEFF7;
+}
+
+select {
+  height: 64px;
+}
+
+input {
+  height: 64px;
+}
+
+.contactSpacer {
+  height: 4vh;
+}
+
+.contactData1 {
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: center;
+}
+
+.contactData2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* Fin de contact */
+/* inicio nav bar */
+.navColor {
+  background-color: #F2F2F2;
+}
+
+.navMenu {
+  justify-content: right;
+  padding-top: 6px;
+  font-family: "Lato", sans-serif;
+}
+.navMenu ul li {
+  padding: 10px;
+}
+.navMenu ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #000;
+  transition: all 0.5s ease;
+}
+.navMenu ul li a:hover {
+  color: #490900;
+}
+
+.navLine {
+  border-bottom: solid #490900 3px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* fin nav bar */
+/* inicio de footer */
+footer {
+  background-image: linear-gradient(#490900, #3B0700);
+  padding: 20px 20px 10px 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.footer1 {
+  color: #fff;
+  padding: 20px;
+}
+
+.footer2 {
+  color: #fff;
+  padding: 20px;
+}
+.footer2 ul {
+  list-style-type: square;
+}
+.footer2 ul li {
+  padding: 5px 10px;
+}
+.footer2 ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer2 ul li a:hover {
+  color: #000;
+}
+
+.footer3 {
+  color: #fff;
+  padding: 20px;
+}
+
+.footerLogo {
+  width: 164px;
+  height: 60px;
+}
+
+.footerAbout {
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.footerBtn {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  height: 44px;
+}
+.footerBtn:hover {
+  background-image: linear-gradient(#2a2a2a, #000000);
+}
+
+.footerSocial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.contactSocial {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.footerForm {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  border: none;
+  color: #000;
+}
+
+.footerInput {
+  border: none;
+  color: #000;
+  width: 200px;
+  height: 43px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+/* Inicio Footer font awesome */
+.fa {
+  padding: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.fa:hover {
+  opacity: 0.7;
+  color: #490900;
+}
+
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #000000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #000000;
+  color: white;
+}
+
+.fa-facebook {
+  background: #000000;
+  color: white;
+}
+
+/* fin Footer font awesome */
+/* fin de footer */
+/* inicio de footer Black*/
+.footerBlack {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.footerBlackP {
+  font-family: "Lato", sans-serif;
+  text-align: right;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* fin de footer Black*/
+/* Inicio de Media Query */
+@media screen and (max-width: 768px) {
+  .footerBlackP {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+/* inico stores*/
+.stores {
+  background-color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.storesBG {
+  background-color: #EFEFF7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.storesImg {
+  text-align: center;
+  margin: 12px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008CBA;
+}
+.overlay :hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.storesTitle {
+  font-family: "Lato", sans-serif;
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.storesPlan {
+  background-image: linear-gradient(#490900, #3B0700);
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-style: italic;
+  width: 64%;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+/* fin stores */
+@media screen and (max-width: 768px) {
+  .storesTitle {
+    font-size: 14px;
+  }
+  .storesPlan {
+    font-size: 14px;
+    width: 70%;
+  }
+  .storesImg {
+    margin: 8px;
+  }
+}
+/* inicio de estadisticas Index*/
+.stats {
+  background-image: linear-gradient(#490900, #3B0700);
+  padding: 30px;
+  text-align: center;
+  border: 0.2px solid #3B0700;
+}
+
+.statsIcon {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EFEFF7;
+}
+
+.statsTitle {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.statsP {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* fin de estadisticas Index*/
+@media screen and (max-width: 768px) {
+  .stats {
+    border: 0.5px solid #3B0700;
+    padding: 10px;
+  }
+  .statsIcon {
+    font-size: 1.5rem;
+  }
+  .statsTitle {
+    font-weight: 900;
+    font-size: 1.2rem;
+    inline-size: 1.5;
+    margin-top: 8px;
+  }
+  .statsP {
+    font-size: 1rem;
+  }
+}
+/* Inicio de campaña principal */
+.carousel-item {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  width: 40%;
+  text-align: center;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bannerImg {
+  padding: 0%;
+}
+
+.bannerTitle {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+}
+
+.bannerText {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.bannerBtn {
+  background-image: linear-gradient(#490900, #3B0700);
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.bannerBtn:hover {
+  background-image: linear-gradient(#000000, #2a2a2a);
+  color: #ffffff;
+  text-decoration: none;
+}
+.bannerBtn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 490px) {
+  .bannerTitle {
+    display: none;
+  }
+  .bannerText {
+    display: none;
+  }
+  .bannerBtn {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 491px) and (max-width: 567px) {
+  .bannerTitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .bannerText {
+    display: none;
+  }
+  .bannerBtn {
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 3px 0;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .bannerTitle {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 0;
+  }
+  .bannerText {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    padding: 4px 0;
+  }
+  .bannerBtn {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1009px) {
+  .bannerTitle {
+    font-size: 1.9rem;
+    line-height: 2rem;
+  }
+  .bannerText {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 6px 0;
+  }
+  .bannerBtn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media (min-width: 1010px) and (max-width: 1199px) {
+  .bannerTitle {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  .bannerText {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    padding: 10px 0;
+  }
+  .bannerBtn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bannerTitle {
+    font-size: 3.1rem;
+    line-height: 3.2rem;
+  }
+  .bannerText {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 200;
+    padding: 10px 0;
+  }
+  .bannerBtn {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 80px;
+}
+
+.titleCenter {
+  margin: 50px 40px 50px 40px;
+  text-align: center;
+}
+
+.titleLeft {
+  margin: 50px 20px 50px 20px;
+  text-align: left;
+}
+
+.spacer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Inicio de caracteristicas Index*/
+.featured {
+  padding: 20px 10px 20px 0px;
+  font-size: 1rem;
+}
+
+.featuredImg {
+  text-align: center;
+}
+
+.featuredP {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 10px 0px 10px 0px;
+  border-top: #EFEFF7 2px solid;
+}
+
+/* fin de caracteristicas Index*/
+/* inico call to action generales*/
+.callAction {
+  background-color: #EFEFF7;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.callAction p {
+  margin: 0px 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* fin call to action generales*/
+/* Inicio Banners internos */
+.imgBannerPrice {
+  background-image: url(../img/price.png);
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(65, 65, 65);
+  height: 300px;
+}
+
+.imgBannerTestimony {
+  background-image: url(../img/testimony.png);
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(65, 65, 65);
+  height: 300px;
+}
+
+.imgBannerFaq {
+  background-image: url(../img/faq.png);
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(65, 65, 65);
+  height: 300px;
+}
+
+.imgBannerContact {
+  background-image: url(../img/contact.png);
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(65, 65, 65);
+  height: 300px;
+}
+
+.imgBannerInternalTitle {
+  height: 300px;
+  line-height: 300px;
+  text-align: left;
+  padding-left: 4%;
+}
+
+/* Fin Banners internos */
+/* Faq */
+.faqTitle {
+  font-family: "Merriweather", serif;
+  font-size: 1rem !important;
+  text-align: left;
+}
+
+.faqP {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+}
+
+/* Inicio Tabla de precios */
+.priceTitle {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+}
+
+.priceDescription {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 0px;
+  text-align: center;
+  margin: 0%;
+}
+
+.priceKey {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0px 10px 15px 10px;
+  text-align: center;
+}
+
+.priceCustom {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: justify;
+  margin: 0%;
+}
+
+.priceMoney1 {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.priceMoney2 {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-size: 26px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.priceSpan {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.priceLine {
+  border: 0.5px solid;
+  color: #EFEFF7;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.priceTableRed {
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(#490900, #3B0700);
+  padding: 10px 10px 20px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.8;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: auto;
+}
+.priceTableRed li {
+  list-style-image: url("../img/checkprice.png");
+}
+
+.priceNote {
+  font-style: italic;
+  font-size: 16px;
+  margin: 40px 40px 50px 0px;
+}
+
+/* Fin tabla de precios */
+/* Inicio de testimonios */
+.testimony {
+  padding: 30px 20px;
+}
+
+.testimonyPlan {
+  background-image: linear-gradient(#490900, #3B0700);
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  font-style: italic;
+  border-radius: 40px;
+  padding: 0 10px;
+}
+
+.testimonySince {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonyText {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border-top: #EFEFF7 2px solid;
+}
+
+.testimonyName {
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 10px;
+  color: #490900;
+}
+
+.testimonyImg {
+  border: 10px solid #ffffff;
+  border-radius: 20px;
+}
+
+/* fin de testimonio */
+/* Inicio faqs */
+.faq {
+  padding: 0 40px;
+  line-height: 1.3;
+}
+
+.faqTitle {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem !important;
+  text-align: left;
+  color: #ffffff;
+}
+
+.faqText {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.faqBg {
+  background-image: linear-gradient(#490900, #3B0700);
+}
+
+@media screen and (max-width: 768px) {
+  .spacer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */

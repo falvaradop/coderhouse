@@ -1,0 +1,347 @@
+@import "./partials/maps";
+@import "./partials/extends";
+@import "./partials/mixins";
+@import "./partials/colors";
+@import "./partials/buttons";
+@import "./partials/fonts";
+@import "./partials/form";
+@import "./partials/header"; 
+@import "./partials/footer"; 
+@import "./partials/stores";
+@import "./partials/stats";
+@import "./partials/campaign";
+
+
+
+// * {
+//     // outline: 1px solid rgb(0, 255, 81) !important;
+//     padding: 0%;
+//     margin: 0%;
+//     box-sizing: border-box;
+//  }  
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: $fontPrimary;
+    font-size: 2rem;
+    padding: 10px 0px;
+}
+
+ul{
+    list-style-type: none;
+} 
+
+p {
+    font-family: $fontSecondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0 80px;
+}
+
+.titleCenter {
+    margin: 50px 40px 50px 40px;
+    text-align: map-get($mainAlign , textCenter);
+}
+
+.titleLeft {
+    margin: 50px 20px 50px 20px;
+    text-align: left;
+}
+
+.spacer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Inicio de caracteristicas Index*/
+.featured {
+    padding: 20px 10px 20px 0px;
+    font-size: 1rem;
+}
+
+.featuredImg{
+    text-align: center;
+}
+
+.featuredP {
+    font-family: $fontSecondary;
+    font-weight: 400;
+    padding: 10px 0px 10px 0px;
+    border-top: $colorSolidGrey 2px solid;
+
+    
+}
+/* fin de caracteristicas Index*/
+
+/* inico call to action generales*/
+.callAction {
+    background-color: $colorSolidGrey;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.callAction{
+    p{
+    margin: 0px 50px;
+    text-align: center;
+    font-family: $fontSecondary;
+    font-size: 1.2rem;
+    }
+}
+/* fin call to action generales*/
+
+
+
+
+// .btnRed{
+//     background-image: $colorGradientRed;
+//     padding: 10px 20px;
+//     text-align: map-get($mainAlign , textCenter);
+//     font-size: 1rem;
+//     font-weight: bold;
+//     border-radius: 4px;
+//     border: none;
+//     color: $colorSolidWhite;
+//     transition: all 0.5s ease;
+//         &:hover{
+//         background-image: $colorGradientBlack;
+//         color: $colorSolidWhite;
+//     }
+// }
+
+
+
+
+/* Inicio Banners internos */
+
+
+.imgBannerPrice{
+    background-image: url(../img/price.png);
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+    font-family: $fontPrimary;
+    color: $colorSolidWhite;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+    height: 300px;
+}
+
+
+.imgBannerTestimony{
+    background-image: url(../img/testimony.png);
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+    font-family: $fontPrimary;
+    color: $colorSolidWhite;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+    height: 300px;
+}
+
+.imgBannerFaq{
+    background-image: url(../img/faq.png);
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+    font-family: $fontPrimary;
+    color: $colorSolidWhite;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+    height: 300px;
+}
+
+.imgBannerContact{
+    background-image: url(../img/contact.png);
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+    font-family: $fontPrimary;
+    color: $colorSolidWhite;
+    text-shadow: 1px 1px 2px rgb(65, 65, 65);
+    height: 300px;
+}
+
+.imgBannerInternalTitle{
+    height: 300px;
+    line-height: 300px;
+    text-align: map-get($mainAlign , textLeft);;
+    padding-left: 4%;
+}
+
+/* Fin Banners internos */
+
+/* Faq */
+.faqTitle{
+    font-family: $fontPrimary;
+    font-size: 1rem !important;
+    text-align: map-get($mainAlign , textLeft);
+}
+
+.faqP{
+    font-family: $fontSecondary;
+    font-size: 22px;
+}
+
+
+/* Inicio Tabla de precios */
+
+
+.priceTitle{
+    font-family: $fontPrimary;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+.priceDescription{
+    font-family: $fontSecondary;
+    font-size: 1.1rem;
+    padding: 10px 0px;
+    text-align: map-get($mainAlign , textCenter);
+    margin: 0%;
+}
+
+.priceKey{
+    font-family: $fontSecondary;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0px 10px 15px 10px;
+    text-align: center;
+}
+
+.priceCustom{
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: map-get($mainAlign , textJustify);
+    margin: 0%; 
+}
+
+.priceMoney1{
+    font-family: $fontPrimary;
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0px;
+    text-align: map-get($mainAlign , textCenter);
+}
+
+.priceMoney2{
+    font-family: $fontPrimary;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 10px 0px;
+    text-align: map-get($mainAlign , textCenter); 
+}
+
+.priceSpan{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.priceLine{
+    border: 0.5px solid;
+    color: $colorSolidGrey;
+    width:80%; 
+    margin: 0 auto;
+}
+
+.priceTableRed {
+    font-family: $fontSecondary;
+    background-image: $colorGradientRed;
+    padding: 10px 10px 20px 10px;
+    color: $colorSolidWhite;
+    font-size: 14px;
+    line-height: 1.8;  
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;  
+    height: auto;
+        li{
+            list-style-image: url('../img/checkprice.png');
+        }
+    }
+
+.priceNote{
+    font-style: italic;
+    font-size: 16px;
+    margin: 40px 40px 50px 0px;    
+}
+
+/* Fin tabla de precios */
+
+/* Inicio de testimonios */
+
+.testimony{
+    padding: 30px 20px;
+}
+
+.testimonyPlan{
+    background-image: $colorGradientRed;
+    font-family: $fontSecondary;
+    color: $colorSolidWhite;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 40px;
+    padding: 0 10px;
+}
+
+.testimonySince{
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonyText{
+    font-size: 1.5rem;
+    font-family: $fontSecondary;
+    font-weight: 400;
+    border-top: $colorSolidGrey 2px solid;
+}
+
+.testimonyName{
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: $colorSolidRed;
+}
+
+.testimonyImg{
+border: 10px solid $colorSolidWhite;
+border-radius: 20px;
+}
+/* fin de testimonio */
+
+
+/* Inicio faqs */
+.faq {
+    padding: 0 40px;
+    line-height: 1.3;
+}
+
+.faqTitle{
+    font-family: $fontPrimary;
+    font-size: 1.6rem !important;
+    text-align: left;
+    color: $colorSolidWhite;
+}
+
+.faqText{
+    font-family: $fontSecondary;
+    font-size: 22px;
+    margin: 20px 0;
+    text-align: map-get($mainAlign , textJustify);
+}
+
+.faqBg{
+    background-image: $colorGradientRed;
+}
+
+@media screen and (max-width:768px){
+    .spacer {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+}

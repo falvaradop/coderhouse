@@ -1,0 +1,33 @@
+/* inicio nav bar */
+
+.navColor {
+    background-color: #F2F2F2;
+}
+
+.navMenu {
+    justify-content: right;
+    padding-top: 6px;
+    font-family: $fontSecondary;
+    ul {
+        li{
+        padding: 10px;
+            a{
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #000;
+            transition: all 0.5s ease;
+                &:hover{
+                color: $colorSolidRed;
+                }
+            }
+        }
+    }
+}
+
+.navLine {
+    border-bottom: solid $colorSolidRed 3px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+/* fin nav bar */
