@@ -4,6 +4,14 @@
     @include storeCards($colorSolidWhite, 10px);
 }
 
+.colBoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px red solid;
+
+}
+
 .storesBG{
     background-color: $colorSolidGrey;
     display: flex;
@@ -47,23 +55,19 @@
     text-align: center;
   }
 
-
-
-
-.pName{
+.storesTitle{
     font-family: $fontSecondary;
     color: #000;
     font-size: 1.1rem;
     margin-bottom: 4px;
 }
 
-.storesPlan{
+.storesPrice{
     background-image: $colorGradientRed;
     font-family: $fontSecondary;
-    font-size: 0.8rem;
-    border-radius: 20px;
-    font-style: italic;
-    width: 64%;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    width: 60%;
     color: #fff ;
     margin: 0 auto 20px auto;
 }
