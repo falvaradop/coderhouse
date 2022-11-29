@@ -18,19 +18,25 @@
     }
 }
 
-.priceBtn{
+#priceBtn{
     @extend %btnBase;
     background-image: $colorGradientBlack;
     width: 100%;
     margin: 0px auto;
     color: $colorSolidWhite;
     &:hover{
-        background-image: $colorGradientWhite;
-        color: $colorSolidBlack !important;
+        background-image: $colorGradientRed;
+        color: $colorSolidWhite !important;
     }
     a {
         color: $colorSolidWhite;
     }
 }
 
+.numberCart{
+    background-color: red;
+    border-radius: 2px;
+    padding: 4px;
+    margin-left: 4px;
+}
 

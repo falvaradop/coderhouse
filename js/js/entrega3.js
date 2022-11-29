@@ -29,29 +29,38 @@ precioAnteriorChocolate[3]=2;
 precioAnteriorChocolate[4]=2;
 
 let photoChocolate = [];
-photoChocolate[0]="./img/darkmilk.png";
-photoChocolate[1]="./img/darkmilk.png";
-photoChocolate[2]="./img/darkmilk.png";
-photoChocolate[3]="./img/darkmilk.png";
-photoChocolate[4]="./img/darkmilk.png";
+photoChocolate[0]="./img/darkmilk.jpg";
+photoChocolate[1]="./img/dark55.jpg";
+photoChocolate[2]="./img/dark70.jpg";
+photoChocolate[3]="./img/dark80.jpg";
+photoChocolate[4]="./img/dark100.jpg";
+
+let btnChocolate = [];
+btnChocolate[0]="agregar al carrito";
+btnChocolate[1]="agregar al carrito";
+btnChocolate[2]="agregar al carrito";
+btnChocolate[3]="agregar al carrito";
+btnChocolate[4]="agregar al carrito";
+
 
 class Products {
-    constructor (id , photoChocolate, nombreChocolate,descriptionChocolate, precioChocolate, precioAnteriorChocolate){
+    constructor (id , photoChocolate, nombreChocolate,descriptionChocolate, precioChocolate, precioAnteriorChocolate, btnChocolate){
         this.id = id;
         this.photoChocolate = photoChocolate;
         this.nombreChocolate = nombreChocolate;
         this.descriptionChocolate = descriptionChocolate;
         this.precioChocolate = precioChocolate;
         this.precioAnteriorChocolate = precioAnteriorChocolate;
+        this.btnChocolate = btnChocolate;
 
     }
 }
 
-const product0 = new Products (000,photoChocolate[0], nombreChocolate[0], descriptionChocolate[0], precioChocolate[0], precioAnteriorChocolate[0]);
-const product1 = new Products (001,photoChocolate[1], nombreChocolate[1], descriptionChocolate[1], precioChocolate[1], precioAnteriorChocolate[1]);
-const product2 = new Products (002,photoChocolate[2], nombreChocolate[2], descriptionChocolate[2], precioChocolate[2], precioAnteriorChocolate[2]);
-const product3 = new Products (003,photoChocolate[3], nombreChocolate[3], descriptionChocolate[3], precioChocolate[3], precioAnteriorChocolate[3]);
-const product4 = new Products (004,photoChocolate[4], nombreChocolate[4], descriptionChocolate[4], precioChocolate[4], precioAnteriorChocolate[4]);
+const product0 = new Products (000,photoChocolate[0], nombreChocolate[0], descriptionChocolate[0], precioChocolate[0], precioAnteriorChocolate[0], btnChocolate[0]);
+const product1 = new Products (001,photoChocolate[1], nombreChocolate[1], descriptionChocolate[1], precioChocolate[1], precioAnteriorChocolate[1], btnChocolate[1]);
+const product2 = new Products (002,photoChocolate[2], nombreChocolate[2], descriptionChocolate[2], precioChocolate[2], precioAnteriorChocolate[2], btnChocolate[2]);
+const product3 = new Products (003,photoChocolate[3], nombreChocolate[3], descriptionChocolate[3], precioChocolate[3], precioAnteriorChocolate[3], btnChocolate[3]);
+const product4 = new Products (004,photoChocolate[4], nombreChocolate[4], descriptionChocolate[4], precioChocolate[4], precioAnteriorChocolate[4], btnChocolate[4]);
 
 const BD = [product0, product1, product2, product3, product4];
 
@@ -65,7 +74,8 @@ const carrito = BD.map((el)=>{
         nombreChocolate:el.nombreChocolate,
         descriptionChocolate:el.descriptionChocolate,
         precioChocolate:el.precioChocolate * IVA,
-        precioAnteriorChocolate:el.precioAnteriorChocolate
+        precioAnteriorChocolate:el.precioAnteriorChocolate,
+        btnChocolate:el.btnChocolate
     }
 }
 )
@@ -81,13 +91,11 @@ BD.forEach((Products)=>{
             <img src=${Products.photoChocolate} class="img-fluid storesImg" alt="Logo store" />
             <div class = "storesTitle">${Products.nombreChocolate}</div>
             <div class = "storesPrice">$ ${Products.precioChocolate}</div>
-            <button type="submit" id="addBtn" class="priceBtn">Agregar al carrito</button>
+            <button type="submit" id="priceBtn">${Products.btnChocolate}</button>
         </div>
     
     `;
-    
     shopContent.append(contentCard)
-    
 })
 
 
@@ -100,17 +108,10 @@ console.log("el valor total del carrito es " +sumaTotal)
 let descuento = BD.filter((el)=>el.precioAnteriorChocolate > el.precioChocolate)
 console.log(descuento)
 
+let botonAlert = document.getElementById("priceBtn")
+botonAlert.addEventListener('click',llamarBoton)
 
-//....DOM
-let nombreChocolate2 = document.getElementsByClassName("pName")
-// nombreChocolate2.innerText = "dasdasda"
-console.log(nombreChocolate2)
-
-
-let boton4 = document.getElementById("addBtn")
-boton4.addEventListener('click',llamarBoton4)
-
-function llamarBoton4(){
+function llamarBoton(){
     Swal.fire(
         'Producto agregado',
         'Seguir comprando',

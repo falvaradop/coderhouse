@@ -4,13 +4,6 @@
     @include storeCards($colorSolidWhite, 10px);
 }
 
-.colBoot{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px red solid;
-
-}
 
 .storesBG{
     background-color: $colorSolidGrey;
