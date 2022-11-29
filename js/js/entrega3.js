@@ -75,7 +75,7 @@ let shopContent = document.getElementById("shopContent")
 
 BD.forEach((Products)=>{
     let contentCard = document.createElement("div")
-    contentCard.className = "stores d-flex flex-row";
+    contentCard.className = "stores col-3 d-inline-flex";
     contentCard.innerHTML = ` 
         <div class="storesBG">
             <img src=${Products.photoChocolate} class="img-fluid storesImg" alt="Logo store" />
