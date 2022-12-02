@@ -120,3 +120,20 @@ function llamarBoton(){
       )
 
 }
+
+//grabo localmente el nombre del usuario que va a realizar la compra
+
+const usuario = {
+    nombre: "Francisco",
+    apellido: "Alvarado",
+    pais: "Ecuador",
+    ciudad: "Guayaquil",
+    direccion: "Los Alamos",
+    email: "falvarad@gmail.com",
+    dni: 0914751276,
+    celular: 593997165165,
+}
+
+const usuarioJSON = JSON.stringify(usuario);
+console.log(usuarioJSON);
+localStorage.setItem("usuario", usuarioJSON);
