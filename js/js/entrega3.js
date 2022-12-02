@@ -65,6 +65,7 @@ const product4 = new Products (004,photoChocolate[4], nombreChocolate[4], descri
 const BD = [product0, product1, product2, product3, product4];
 
 const IVA = 1.12
+localStorage.setItem("imp", IVA);
 
 
 const carrito = BD.map((el)=>{
