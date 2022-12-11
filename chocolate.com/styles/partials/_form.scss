@@ -1,0 +1,40 @@
+/* Inicio de contact */
+
+
+.contactForm{
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: 0.5px solid $colorSolidGrey2;
+    background-color: $colorSolidGrey;
+}
+
+
+select{
+    height: 64px;
+}
+
+
+input{
+    height: 64px;
+}
+
+.contactSpacer{
+    height: 4vh;
+}
+
+.contactData1{
+    font-family: $fontPrimary;
+    font-size: 1.2rem;
+    color: $colorSolidBlack;
+    text-align: center;
+}
+
+.contactData2{
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    color: $colorSolidBlack;
+    text-align: center;
+}
+
+/* Fin de contact */

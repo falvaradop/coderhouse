@@ -1,0 +1,47 @@
+/* inicio de estadisticas Index*/
+.stats {
+    background-image: linear-gradient(#490900, #3B0700);
+    padding: 30px;
+    text-align: center;
+    border: 0.2px solid $colorSolidBrown2;
+}
+
+.statsIcon{
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: $colorSolidGrey;
+}
+
+.statsTitle{
+    color:#fff;
+    font-family: $fontSecondary;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.statsP{
+    color:#fff;
+    font-family: $fontSecondary;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+/* fin de estadisticas Index*/
+
+@media screen and (max-width:768px){
+    .stats {
+        border: 0.5px solid $colorSolidBrown2;
+        padding: 10px;
+    }
+    .statsIcon{
+        font-size: 1.5rem;
+    }
+    .statsTitle{
+        font-weight: 900;
+        font-size: 1.2rem;
+        inline-size: 1.5;
+        margin-top: 8px;
+    }
+    .statsP{
+        font-size: 2rem;
+    }
+}
