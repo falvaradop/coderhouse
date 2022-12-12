@@ -772,6 +772,20 @@ main {
   padding: 0.2rem;
 }
 
+.cartTextPurchaseH1 {
+  color: #000000;
+  font-style: "Merriweather", serif;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+
+.cartTexTPurchaseP {
+  color: #000000;
+  font-style: "Lato", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
 .cartProductContainer {
   display: flex;
   flex-direction: column;
@@ -856,12 +870,17 @@ main {
   display: flex;
   background-color: #EFEFF7;
   color: #000000;
-  padding: 0.4rem;
+  padding: 0.4rem 0;
   text-transform: uppercase;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   font-weight: 600;
   font-size: 4rem;
+  gap: 0.2rem;
+}
+
+.disable {
+  display: none;
 }
 
 /* Inicio Banners internos */
