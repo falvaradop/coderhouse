@@ -13,12 +13,12 @@
 
 
 
-* {
-    outline: 1px solid rgb(0, 255, 81) !important;
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
- }  
+// * {
+//     outline: 1px solid rgb(0, 255, 81) !important;
+//     padding: 0%;
+//     margin: 0%;
+//     box-sizing: border-box;
+//  }  
 
 
 a {
@@ -80,8 +80,9 @@ p {
 /* inico call to action generales*/
 .callAction {
     background-color: $colorSolidGrey;
-    padding: 50px 20px;
+    padding: 1.5rem;
     text-align: center;
+    // display: none;
 }
 
 .callAction{
@@ -108,12 +109,26 @@ p {
 color: $colorSolidWhite;
 padding: 2rem;
 padding-right: 0;
-position: sticky;
+// position: sticky;
 top: 0;
-height: 80vh;
+height: 40vh;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content:space-around;
+}
+
+.wrapperIcon{
+padding: 0.5rem;
+padding-left: 0;
+background-color: transparent;
+color: $colorSolidWhite;
+width: 100%;
+text-align: left;
+transition: background-color .2s, color .2s;
+&:hover{
+    text-decoration: underline;
+    color: $colorSolidGrey2;
+    }
 }
 
 .btnSidebar {
@@ -125,11 +140,13 @@ gap: 3rem;
 background-color: transparent;
 border: 0;
 color: $colorSolidWhite;
-font-size: 1.2 rem;
+font-size: 1.2rem;
+font-family: $fontSecondary;
 cursor: pointer;
 display: flex;
-padding: 0.4rem;
-font-weight: 500;
+padding: 0.5rem;
+padding-left: 1.8rem;
+font-weight: 600;
 margin-top: 1rem;
 }
 
@@ -141,13 +158,15 @@ margin-top: 1rem;
 }
 
 .wrapperLogo{
-    font-weight: 400;
-    font-size: 1.6 rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .wrapperFooterText{
-    font-weight: 400;
-    font-size: 1.6 rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: $colorSolidGrey2;
 }
 
 .wrapperTitle{
@@ -160,9 +179,17 @@ margin-top: 1rem;
 main{
     background-color: $colorSolidWhite;
     margin: 0rem;
-    border-radius: 0.2rem;
-    padding: 2rem;
+    padding: 0rem;
+}
+
+.wrapperMain{
+    background-color: $colorSolidWhite;
+    margin: 1.4rem;
+    border-radius: 0.4rem;
+    padding: 1.4rem;
     margin-left: 0;
+
+
 }
 
 .productContainer{
@@ -179,8 +206,8 @@ main{
 
 .productImg{
     width: 100%;
-    border-radius: 1rem;
-    border: 0.4rem solid $colorSolidGrey;
+    border-radius: 0.4rem;
+    border: 0.8rem solid $colorSolidGrey;
 
 }
 
@@ -210,6 +237,7 @@ main{
     font-style: $fontSecondary;
     color: $colorSolidWhite;
     width: 100%;
+    border: none;
     border-radius: 0.4rem;
     padding: 0.4rem;
     text-transform: uppercase;
@@ -220,11 +248,121 @@ main{
     }
 }
 
+
+/* Inicio Cart */
+
+.cartTextEmptyH1{
+    color: $colorSolidBlack;
+    font-style: $fontPrimary;
+    font-size: 2rem;
+    padding: 0.2rem;
+
+}
+.cartTextEmptyP{
+    color: $colorSolidBlack;
+    font-style: $fontSecondary;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+.cartProductContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.4rem;
+    background-color: $colorSolidWhite;
+}
+
+.cartProductImg{
+    width: 6rem;
+    border-radius: 0.2rem;
+}
+
+.cartProduct{
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorSolidGrey;
+    border-radius: 0.4rem;
+    color: $colorSolidBlack;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+    font-family: $fontSecondary;
+}
+
+.cartProduct small{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $colorSolidBrown;
+}
+
+.cartProductDelete{
+    border: 0;
+    background-color: $colorSolidBrown;
+    color: $colorSolidWhite;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    &:hover{
+        background-image: $colorGradientBlack;
+        color: $colorSolidWhite;
+    }
+}
+
+.cartActions{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cartActionsEmpty{
+    border:0;
+    background-color: $colorSolidGrey;
+    color: $colorSolidBlack;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    &:hover{
+        background-image: $colorGradientBlack;
+        color: $colorSolidWhite;
+    }
+}
+
+.cartActionsRight{
+    display: flex;
+    color: $colorSolidBlack;
+}
+
+.cartActionsBuy{
+    border:0;
+    background-color: $colorSolidBrown;
+    color: $colorSolidWhite;
+    padding: 0.6rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    text-transform: uppercase;
+    &:hover{
+        background-image: $colorGradientBlack;
+        color: $colorSolidWhite;
+    }
+}
+
+.cartActionsTotal{
+    display: flex;
+    background-color: $colorSolidGrey;
+    color: $colorSolidBlack;
+    padding: 0.4rem;
+    text-transform: uppercase;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
 /* Inicio Banners internos */
 
 
 .imgBannerCart{
-    background-image: url(../img/cart.png);
+    background-image: url(../img/catalog.png);
     font-size: 2rem;
     background-size: cover;
     background-position: center;
@@ -246,7 +384,7 @@ main{
 }
 
 .imgBannerContact{
-    background-image: url(../img/contact.png);
+    background-image: url(../img/catalog.png);
     font-size: 2rem;
     background-size: cover;
     background-position: center;
@@ -259,8 +397,7 @@ main{
 .imgBannerInternalTitle{
     height: 300px;
     line-height: 300px;
-    text-align: map-get($mainAlign , textLeft);;
-    padding-left: 4%;
+    text-align: center;
 }
 
 /* Fin Banners internos */

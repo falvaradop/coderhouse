@@ -36,7 +36,7 @@
                         <a class="nav-link" href="../pages/contact.html">Contacto</a>
                     </li>
                     <li> 
-                        <a class="btnCart" href="./cart.html">
+                        <a class="btnCart active navLine" href="./cart.html">
                         <i class="fa-solid fa-basket-shopping"></i> <span class="numberCart">0</span>
                         </a>
                     </li>
@@ -58,90 +58,97 @@
     </div>
         <!-- Fin Banner interno -->   
     
-    <div class="wrapper">
-        <aside>
-            <header>
-                <div class="wrapperLogo">Chocolate San José</div>
-                <div>detesds</div>
-            </header>
+        <div class="wrapper">
+            <div class="wrapperAside">
+                <header>
+                    <div class="wrapperLogo">Proceder a la compra</div>
+                </header>
             <nav>
+                
                 <ul>
-                    <li><button class="btnSidebar buttonBack active"><i class="fa-solid fa-square-caret-left"></i>Seguir comprando</button></li>
+                    <li><button class="btnSidebar btnCategory active">Carrito de compras</button></li>
                 </ul>
+                <ul>
+                    <li><a class="wrapperIcon" href="./cart.html"><i class="fa-solid fa-arrow-left"></i> Seguir comprando</a></li>
+                </ul>
+
             </nav>
-        </aside>
-        
-        <main>
-            <h2>Carrito de compras</h2>
-            <div class="cartProductContainer">
-                <div class="callAction">
-                    <h1>Tu carrito esta vacio</h1>
-                    <p><i class="fa-regular fa-face-sad-cry"></i> Vuelve al inicio y agrega tu primer producto</p>
-                    </a> 
-                </div>
-                
-                <div class="cartProducts">
-                    <img class="productImg" src="../img/darkmilk.jpg" alt="chocolate San José" />
-                    <div class="cartProductTitle">
-                        <small>Titulo</small>
-                        <h3>Chocolate Dark Milk</h3>
-                    </div>
-                    <div class="cartProductAmount">
-                        <small>Cantidad</small>
-                        <h3>1</h3>
-                    </div>
-                    <div class="cartProductPrice">
-                        <small>Precio</small>
-                        <h3>$2</h3>
-                    </div>
-                    <div class="cartProductSubtotal">
-                        <small>Subtotal</small>
-                        <h3>$4</h3>
-                    </div> 
-                    <button class="cartProductDelete">
-                        <i class="fa-regular fa-trash-can"></i>
-                    </button>   
-                </div>
-
-                <div class="cartProducts">
-                    <img class="productImg" src="../img/dark55.jpg" alt="chocolate San José" />
-                    <div class="cartProductTitle">
-                        <small>Titulo</small>
-                        <h3>Chocolate Dark 55%</h3>
-                    </div>
-                    <div class="cartProductAmount">
-                        <small>Cantidad</small>
-                        <h3>1</h3>
-                    </div>
-                    <div class="cartProductPrice">
-                        <small>Precio</small>
-                        <h3>$2</h3>
-                    </div>
-                    <div class="cartProductSubtotal">
-                        <small>Subtotal</small>
-                        <h3>$4</h3>
-                    </div> 
-                    <button class="cartProductDelete">
-                        <i class="fa-regular fa-trash-can"></i>
-                    </button>   
-                </div>
-                
-                <div class="cartActions">
-                    <div class="cartActionsLeft">
-                        <button class="cartActionsEmpty">Vaciar Carrito</button>
-                    </div>
-                    <div class="cartActionsRight">
-                        <div class="cartActionsTotal">
-                            <p>Total:</p>
-                            <p id="total">$3000</p>
-                        </div>
-                        <button class="cartActionsBuy">Proceder al pago</button>
-                    </div>
-                </div>
-
             </div>
-        </main>
-    </div>
+
+            <div class="wrapperMain">
+                <div class="wrapperTitle">Carrito de compras</div>
+                <div class="cartProductContainer">
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class="callAction">
+                                <div class="cartTextEmptyH1">Tu carrito esta vacio</div>
+                                <div class="cartTextEmptyP"><i class="fa-regular fa-face-sad-cry"></i> Vuelve al inicio y agrega tu primer producto</div>
+                                </a> 
+                            </div>
+                        </div>
+                    </section>
+                
+                    <div class="cartProduct">
+                        <img class="cartProductImg" src="../img/darkmilk.jpg" alt="chocolate San José" />
+                        <div class="cartProductTitle">
+                            <small>Titulo</small>
+                            <h3>Chocolate Dark Milk</h3>
+                        </div>
+                        <div class="cartProductAmount">
+                            <small>Cantidad</small>
+                            <h3>1</h3>
+                        </div>
+                        <div class="cartProductPrice">
+                            <small>Precio</small>
+                            <h3>$2</h3>
+                        </div>
+                        <div class="cartProductSubtotal">
+                            <small>Subtotal</small>
+                            <h3>$4</h3>
+                        </div> 
+                        <button class="cartProductDelete">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>   
+                    </div>
+
+                    <div class="cartProduct">
+                        <img class="cartProductImg" src="../img/dark55.jpg" alt="chocolate San José" />
+                        <div class="cartProductTitle">
+                            <small>Titulo</small>
+                            <h3>Chocolate Dark 55%</h3>
+                        </div>
+                        <div class="cartProductAmount">
+                            <small>Cantidad</small>
+                            <h3>1</h3>
+                        </div>
+                        <div class="cartProductPrice">
+                            <small>Precio</small>
+                            <h3>$2</h3>
+                        </div>
+                        <div class="cartProductSubtotal">
+                            <small>Subtotal</small>
+                            <h3>$4</h3>
+                        </div> 
+                        <button class="cartProductDelete">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>   
+                    </div>
+                    
+                    <div class="cartActions">
+                        <div class="cartActionsLeft">
+                            <button class="cartActionsEmpty">Vaciar Carrito</button>
+                        </div>
+                        <div class="cartActionsRight">
+                            <div class="cartActionsTotal">
+                                <p>Total:</p>
+                                <p id="total">$3000</p>
+                            </div>
+                            <button class="cartActionsBuy">Proceder al pago</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
 <!-- inicio footer -->
 <footer class="container-fuid">
