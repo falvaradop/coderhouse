@@ -72,7 +72,7 @@ const products = [
         id: "bites02",
         titulo: "Bites de Chocolate 55% Dark",
         descripcion: "50 gramos de chocolate semiamargo al 55%. Sus notas a panela, madera, miel y menta hacen que sea un chocolate balanceado y fácil de degustar para las personas que quieren comenzar a probar distintos porcentajes de cacao.",
-        imagen: "../img/barras/dark55.jpg",
+        imagen: "../img/bites/dark55.jpg",
         categoria: {
             nombre: "Bites",
             id: "bites"
@@ -114,10 +114,17 @@ const products = [
     },
 ];
 
-const productContainer = document.querySelector("#productContainer");
 
-function loadProducts(){
-    products.forEach(product => {
+const productContainer = document.querySelector("#productContainer");
+const btnCategory = document.querySelectorAll(".btnCategory");
+
+
+function loadProducts(selectedProducts){
+    productContainer.innerHTML = "";
+
+
+
+    selectedProducts.forEach(product => {
         const div = document.createElement("div");
         div.classList.add("product");
         div.innerHTML = `
@@ -134,4 +141,21 @@ function loadProducts(){
     })
 }
 
-loadProducts();
+loadProducts(products);
+
+
+btnCategory.forEach(boton =>{
+    boton.addEventListener("click", (e)=> {
+        btnCategory.forEach(boton=>boton.classList.remove("active"));
+        e.currentTarget.classList.add("active");
+
+    if (e.currentTarget.id != "todos"){
+    const productosBoton = products.filter(product => product.categoria.id === e.currentTarget.id);
+    loadProducts(productosBoton);
+    }
+    else{
+        loadProducts(products);
+    }
+    })
+})
+
