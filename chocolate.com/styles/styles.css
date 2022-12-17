@@ -710,15 +710,10 @@ main {
   gap: 1rem;
 }
 
-.productBG {
-  border-radius: 1rem;
-  background-color: #EFEFF7;
-}
-
 .productImg {
   width: 100%;
-  border-radius: 0.4rem;
   border: 0.8rem solid #EFEFF7;
+  border-radius: 1rem;
 }
 
 .productTitle {
@@ -755,6 +750,11 @@ main {
 .productBtnAdd:hover {
   background-image: linear-gradient(#000000, #2a2a2a);
   color: #ffffff;
+}
+
+.product {
+  border-radius: 1rem;
+  background: #EFEFF7;
 }
 
 /* Inicio Cart */

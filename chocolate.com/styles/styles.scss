@@ -200,15 +200,10 @@ main{
 
 }
 
-.productBG{
-    border-radius: 1rem;
-    background-color: $colorSolidGrey;
-}
-
 .productImg{
     width: 100%;
-    border-radius: 0.4rem;
     border: 0.8rem solid $colorSolidGrey;
+    border-radius: 1rem;
 
 }
 
@@ -247,6 +242,11 @@ main{
         background-image: $colorGradientBlack;
         color: $colorSolidWhite;
     }
+}
+
+.product{
+    border-radius: 1rem;
+    background: $colorSolidGrey;
 }
 
 
