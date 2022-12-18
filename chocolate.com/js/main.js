@@ -184,9 +184,11 @@ function addToCart (e){
     productsInCart.push(addedProduct);
     }
     actualizarNumerito();
+
+    localStorage.setItem("productosEnCarrito", JSON.stringify(productsInCart));
 }
 
 function actualizarNumerito(){
     let nuevoNumerito = productsInCart.reduce((acc, product) => acc + product.cantidad, 0);
-    numerito.innerHTML = nuevoNumerito;
+    numerito.innerText = nuevoNumerito;
 }
