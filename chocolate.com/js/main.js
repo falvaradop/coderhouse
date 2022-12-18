@@ -117,6 +117,8 @@ const products = [
 
 const productContainer = document.querySelector("#productContainer");
 const btnCategory = document.querySelectorAll(".btnCategory");
+let btnAdd = document.querySelectorAll(".productBtnAdd");
+const numerito = document.querySelector("#numerito");
 
 
 function loadProducts(selectedProducts){
@@ -139,10 +141,11 @@ function loadProducts(selectedProducts){
         `;
         productContainer.append(div);
     })
+    
+    updateBtnAdd();
 }
 
 loadProducts(products);
-
 
 btnCategory.forEach(boton =>{
     boton.addEventListener("click", (e)=> {
@@ -159,3 +162,31 @@ btnCategory.forEach(boton =>{
     })
 })
 
+function updateBtnAdd(){
+    btnAdd = document.querySelectorAll(".productBtnAdd");
+    btnAdd.forEach( boton =>{
+        boton.addEventListener("click", addToCart);
+
+    });
+}
+
+const productsInCart = [];
+
+function addToCart (e){
+    const idBoton = e.currentTarget.id;
+    const addedProduct = products.find (product => product.id === idBoton);
+    if (productsInCart.some(product=>product.id === idBoton)){
+        const index = productsInCart.findIndex(product => product.id === idBoton);
+        productsInCart[index].cantidad++;
+    }
+    else{
+    addedProduct.cantidad = 1;
+    productsInCart.push(addedProduct);
+    }
+    actualizarNumerito();
+}
+
+function actualizarNumerito(){
+    let nuevoNumerito = productsInCart.reduce((acc, product) => acc + product.cantidad, 0);
+    numerito.innerHTML = nuevoNumerito;
+}
