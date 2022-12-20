@@ -172,10 +172,10 @@ function updateBtnAdd(){
 
 let productsInCart;
 
-const productsInCartPageLS = JSON.parse(localStorage.getItem("productosEnCarrito"));
+let productsInCartPageLS = localStorage.getItem("productosEnCarrito");
 
 if (productsInCartPageLS){
-    productsInCart = productsInCartPageLS;
+    productsInCart = JSON.parse(productsInCartPageLS);
     actualizarNumerito();
 }
 else{
