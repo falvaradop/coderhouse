@@ -170,7 +170,18 @@ function updateBtnAdd(){
     });
 }
 
-const productsInCart = [];
+let productsInCart;
+
+const productsInCartPageLS = JSON.parse(localStorage.getItem("productosEnCarrito"));
+
+if (productsInCartPageLS){
+    productsInCart = productsInCartPageLS;
+    actualizarNumerito();
+}
+else{
+    productsInCart = [];
+}
+
 
 function addToCart (e){
     const idBoton = e.currentTarget.id;

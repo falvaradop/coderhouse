@@ -78,12 +78,13 @@ p {
 }
 /* fin de caracteristicas Index*/
 
+
+
 /* inico call to action generales*/
 .callAction {
     background-color: $colorSolidGrey;
     padding: 1.5rem;
     text-align: center;
-    // display: none;
 }
 
 .callAction{
@@ -252,6 +253,22 @@ main{
 
 /* Inicio Cart */
 
+
+.cartEmpty{
+    background-color: $colorSolidGrey;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cartPurchase{
+    background-color: $colorSolidGrey;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
 .cartTextEmptyH1{
     color: $colorSolidBlack;
     font-style: $fontPrimary;
@@ -259,6 +276,7 @@ main{
     padding: 0.2rem;
 
 }
+
 .cartTextEmptyP{
     color: $colorSolidBlack;
     font-style: $fontSecondary;
@@ -375,7 +393,7 @@ main{
     gap: 0.2rem;
 }
 
-.disable{
+.disabled {
     display: none;
 }
 

@@ -758,6 +758,20 @@ main {
 }
 
 /* Inicio Cart */
+.cartEmpty {
+  background-color: #EFEFF7;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cartPurchase {
+  background-color: #EFEFF7;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .cartTextEmptyH1 {
   color: #000000;
   font-style: "Merriweather", serif;
@@ -879,7 +893,7 @@ main {
   gap: 0.2rem;
 }
 
-.disable {
+.disabled {
   display: none;
 }
 
